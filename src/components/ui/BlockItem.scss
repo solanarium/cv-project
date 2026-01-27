@@ -1,0 +1,48 @@
+.block-item {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  margin-top: 12px;
+  gap: 12px;
+
+  &__date {
+    font-size: 16px;
+    color: $color-primary;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__location {
+    color: $color-primary;
+    font-size: 14px;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $color-primary;
+    font-style: italic;
+    margin: 4px 0;
+  }
+
+  &__list {
+    color: $color-primary;
+    font-size: 14px;
+    margin-left: 22px;
+      
+    &-item {
+      margin-bottom: 4px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+}
