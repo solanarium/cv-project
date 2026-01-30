@@ -1,0 +1,49 @@
+.cv-section {
+  display: grid;
+  grid-template-columns: 77px 1fr;
+  margin-top: 6px;
+  gap: 12px;
+
+  &__date {
+    @include text-small
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 10px;
+    letter-spacing: 0.4px;
+  }
+
+  &__location {
+    @include text-small
+  }
+
+  &__description {
+    @include text-small(0.8px);
+    font-style: italic;
+    margin: 6px 0 4px 0;
+  }
+
+  &__list {
+    @include text-small(0.5px);
+    margin-left: 26px;
+      
+    &-item {
+      line-height: 1.75;
+      word-spacing: 0.6px;
+
+      &:last-child {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  &:last-child {
+    margin-bottom: 17px;
+  }
+  
+}

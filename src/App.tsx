@@ -2,16 +2,15 @@ import './App.scss'
 
 import type { FC } from 'react'
 
-import { Container } from './components/Container'
-import { Header } from './components/Header'
-import { ResumeContent } from './components/ResumeContent'
+import { CV } from './components/cv/CV'
+import { SideBar } from './components/SideBar'
 
 const App: FC = () => {
   return (
-    <Container>
-      <Header title="Claudette Lening" />
-      <ResumeContent />
-    </Container>
+    <div className="container">
+      <CV />
+      <SideBar />
+    </div>
   )
 }
 

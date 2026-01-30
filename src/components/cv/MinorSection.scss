@@ -1,0 +1,23 @@
+.simple-block {
+
+  &__section {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    margin: 5px 0 4px 0;
+    line-height: 1.7;
+    gap: 5px;
+
+    &-key {
+      @include text-small
+    }
+
+    &-value {
+      @include text-small;
+      word-spacing: 1px;
+    } 
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+}

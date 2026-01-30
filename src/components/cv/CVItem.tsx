@@ -1,0 +1,37 @@
+import './CVItem.scss'
+
+import type { FC } from 'react'
+
+interface Props {
+  content: {
+    title: string
+    date: string
+    description: string
+    location: string
+    summary: string[]
+  }
+}
+
+export const CVItem: FC<Props> = ({ content }) => {
+  const { title, date, description, location, summary } = content
+
+  return (
+    <div className="cv-section">
+      <div className="cv-section__date">{date}</div>
+      <div>
+        <div className="cv-section__header">
+          <h4 className="cv-section__title">{title}</h4>
+          <div className="cv-section__location">{location}</div>
+        </div>
+        <div className="cv-section__description">{description}</div>
+        <ul className="cv-section__list">
+          {summary.map((item) => (
+            <li className="cv-section__list-item" key={item}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+}

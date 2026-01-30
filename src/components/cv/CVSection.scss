@@ -1,0 +1,12 @@
+.block {
+
+  &__title {
+    padding-bottom: 3px;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+    border-bottom: 2px solid #000;
+    font-size: 12px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+}

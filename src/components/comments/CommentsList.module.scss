@@ -1,0 +1,25 @@
+.comments {
+
+  &__list {
+    display: grid;
+    gap: 8px;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 4px;
+
+     &-icon {
+      height: 28px;
+      width: 28px;
+      padding: 16px;
+      border-radius: 99%;
+      background-color: $color-primary;
+      opacity: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+

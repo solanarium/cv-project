@@ -1,0 +1,7 @@
+@use './variables' as *;
+
+@mixin text-small($letter-spacing: 0.4px) {
+  font-size: 10px;
+  color: $color-primary;
+  letter-spacing: $letter-spacing;
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 3px $color-primary;
+  gap: 8px;
+  height: 100vh;
+  justify-content: space-between;
+
+  &__comments {
+    overflow-y: scroll;
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }  
+}
