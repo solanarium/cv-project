@@ -8,7 +8,7 @@ export const cv: CV = {
   linkedInURL: 'linkedin.com/in/claudette-lening',
   sections: [
     {
-      title: 'Experience',
+      title: 'Relevant Experience',
       type: 'major',
       data: [
         {
@@ -76,7 +76,7 @@ export const cv: CV = {
       ],
     },
     {
-      title: 'Achievements',
+      title: 'Extracurricular & Awards',
       type: 'minor',
       data: [
         {
@@ -86,7 +86,7 @@ export const cv: CV = {
       ],
     },
     {
-      title: 'Additional',
+      title: 'Additional information & skills',
       type: 'minor',
       data: [
         {

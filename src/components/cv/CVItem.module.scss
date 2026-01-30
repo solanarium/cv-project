@@ -25,12 +25,14 @@
 
   &__description {
     @include text-small(0.8px);
+
     font-style: italic;
-    margin: 6px 0 4px 0;
+    margin: 6px 0 4px;
   }
 
   &__list {
     @include text-small(0.5px);
+
     margin-left: 26px;
       
     &-item {
@@ -42,8 +44,8 @@
       }
     }
   }
+
   &:last-child {
     margin-bottom: 17px;
   }
-  
 }

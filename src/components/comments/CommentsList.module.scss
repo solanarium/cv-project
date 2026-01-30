@@ -6,19 +6,30 @@
     list-style-type: none;
   }
 
+  &__empty {
+    margin: auto;
+    display: grid;
+    gap: 6px;
+    place-items: center;
+
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
   &__item {
     padding: 4px;
 
      &-icon {
+      @include flex-container-center;
+
       height: 28px;
       width: 28px;
       padding: 16px;
       border-radius: 99%;
       background-color: $color-primary;
-      opacity: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      opacity: 0.4;
     }
   }
 }

@@ -5,3 +5,9 @@
   color: $color-primary;
   letter-spacing: $letter-spacing;
 }
+
+@mixin flex-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

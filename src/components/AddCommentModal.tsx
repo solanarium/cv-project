@@ -1,9 +1,8 @@
-import './AddCommentModal.scss'
-
 import { Button, Modal, TextField } from '@mui/material'
 import { type FC } from 'react'
 
 import { useCommentsStore } from '../stores/comments'
+import styles from './AddCommentModal.module.scss'
 
 export const AddCommentModal: FC = () => {
   const isOpen = useCommentsStore((state) => state.isOpen)
@@ -14,9 +13,9 @@ export const AddCommentModal: FC = () => {
 
   return (
     <Modal open={isOpen}>
-      <div className="modal">
-        <p className="modal-title">New comment</p>
-        <div className="modal__inputs">
+      <div className={styles.modal}>
+        <p className={styles['modal-title']}>New comment</p>
+        <div className={styles['modal-inputs']}>
           <TextField
             name="name"
             type="text"
@@ -34,7 +33,7 @@ export const AddCommentModal: FC = () => {
             placeholder="Comment..."
           />
         </div>
-        <div className="modal-buttons">
+        <div className={styles['modal-buttons']}>
           <Button onClick={close} variant="outlined">
             CANCEL
           </Button>

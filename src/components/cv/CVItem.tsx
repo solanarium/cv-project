@@ -1,6 +1,6 @@
-import './CVItem.scss'
-
 import type { FC } from 'react'
+
+import styles from './CVItem.module.scss'
 
 interface Props {
   content: {
@@ -16,17 +16,17 @@ export const CVItem: FC<Props> = ({ content }) => {
   const { title, date, description, location, summary } = content
 
   return (
-    <div className="cv-section">
-      <div className="cv-section__date">{date}</div>
+    <div className={styles['cv-section']}>
+      <div className={styles['cv-section__date']}>{date}</div>
       <div>
-        <div className="cv-section__header">
-          <h4 className="cv-section__title">{title}</h4>
-          <div className="cv-section__location">{location}</div>
+        <div className={styles['cv-section__header']}>
+          <h4 className={styles['cv-section__title']}>{title}</h4>
+          <div className={styles['cv-section__location']}>{location}</div>
         </div>
-        <div className="cv-section__description">{description}</div>
-        <ul className="cv-section__list">
+        <div className={styles['cv-section__description']}>{description}</div>
+        <ul className={styles['cv-section__list']}>
           {summary.map((item) => (
-            <li className="cv-section__list-item" key={item}>
+            <li className={styles['cv-section__list-item']} key={item}>
               {item}
             </li>
           ))}
